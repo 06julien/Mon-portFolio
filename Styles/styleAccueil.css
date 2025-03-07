@@ -1,3 +1,305 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+
+body {
+  position: relative;
+  background-image: url("/Images/Abstract_Technology_Binary_Code_Background_Digital_Binary_Data_and_Secure_Data_Concept_with_Number_0_and_1-removebg-preview.png");
+  background-color: rgb(31, 31, 36, 1);
+  background-repeat: repeat-x;
+
+  font-family: "Dosis", sans-serif;
+  top: 2rem;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden auto;
+}
+a {
+  display: inline-block;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272730;
+  top: 22px !important;
+  margin-left: 9%;
+  width: 1296px;
+  height: 81.6px;
+  border-radius: 5px;
+  border: 1px solid #393f3c;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.03);
+  z-index: 9999;
+}
+
+.menu-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 76px;
+  height: 80.1px;
+  margin: 0;
+  background-color: #32323b;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.menu-button i {
+  font-size: 24px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.logo i {
+  font-size: 30px;
+  color: #7cff4c;
+}
+.logo span {
+  font-size: 25px;
+  background: linear-gradient(to right, #ffffff, #7b7a7a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+.nav-bar ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #8d8d92;
+}
+
+.social-media-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button-mode button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 76px;
+  height: 80.1px;
+  margin: 0;
+  background-color: #32323b;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.button-mode svg path {
+  font-size: 22px;
+  color: #ffc107;
+}
+
+.sur-moi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 1.5rem;
+  margin-left: 9%;
+  margin-bottom: 1.5rem;
+  padding: 20px;
+  width: 1296px;
+  background-color: #272730;
+  height: 576.036px;
+  border-radius: 10px;
+  border: 1px solid #393f3c;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.03);
+}
+
+.photo-profil {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.icon-profil {
+  position: absolute;
+  background-color: #7cff4c;
+  width: 81px;
+  height: 73px;
+  border-radius: 10px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.photo-profil img {
+  border-radius: 0px;
+  border: none;
+  width: 505px;
+  height: 455px;
+}
+
+.info-personl {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  gap: 1.5rem;
+  width: 600px;
+  height: 451px;
+}
+.info-personl p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.info-personl p span {
+  color: #dd6ea9;
+}
+
+.senior-dev h1 {
+  font-size: 50px;
+}
+
+.senior-dev h1 span {
+  background: linear-gradient(to right, #a5fb52, #71a342);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.descrip p {
+  width: 550px;
+  height: 73px;
+}
+
+.descrip p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.competence-img {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  width: 400px;
+  height: 80px;
+}
+
+.competence-img .outils {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.competence-img .outils div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #393f3c;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.competence-img .outils div img {
+  width: 30px;
+  height: 30px;
+}
+
+.competence-img span {
+  font-size: 17px;
+  color: #8d8d90;
+}
+
+.button-dwd-my-cv button {
+  border: none;
+  background: none;
+  margin-top: 14px;
+}
+
+.button-dwd-my-cv button span {
+  font-size: 18px;
+  background: linear-gradient(to right, #8d8d90, #4a4a51);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button-dwd-my-cv button i {
+  color: #7cff4c;
+  font-size: 22px;
+}
+
+.succes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  width: 1295px;
+  height: 230px;
+  top: 14px;
+  margin-left: 9%;
+  background-color: #272730;
+  border-radius: 10px;
+  border: 1px solid #393f3c;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.valeur-of-succes {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: le;
+  gap: 1px;
+}
+
+.valeur-icon i {
+  font-size: 22px;
+  color: #7cff4c;
+}
+
+.valeur-text {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 3px;
+  font-size: 50px;
+  font-family: "Dosis", sans-serif;
+}
+
+.valeur-text-sucess {
+  font-size: 20px;
+}
+
 .timeline-container {
   max-width: 600px;
   background-color: #29293d;
@@ -134,4 +436,12 @@ textarea::placeholder {
 .contact-item p {
   margin: 0;
   font-size: 1rem;
+}
+
+.coperation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1295px;
+  height: 230px;
 }

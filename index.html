@@ -10,6 +10,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fira+Code:wght@300..700&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fira+Code:wght@300..700&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="Styles/styleAccueil.css" />
     <title>Julien.MpN.dev</title>
@@ -17,13 +30,13 @@
   <body>
     <!-- ------------HEADER DE LA PAGE-------------- -->
     <header>
-      <div>
+      <div class="menu-button">
         <button>
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
 
-      <div>
+      <div class="logo">
         <div>
           <i class="fa-solid fa-code"></i>
         </div>
@@ -33,7 +46,7 @@
       </div>
 
       <div>
-        <nav>
+        <nav class="nav-bar">
           <ul>
             <li>
               <a href="">Sur Moi</a>
@@ -54,7 +67,7 @@
         </nav>
       </div>
 
-      <div>
+      <div class="social-media-header">
         <div>
           <a href=""><i class="fa-brands fa-facebook"></i></a>
         </div>
@@ -69,9 +82,25 @@
         </div>
       </div>
 
-      <div>
+      <div class="button-mode">
         <button>
-          <i class="fa fa-sun-o" aria-hidden="true"></i>
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5V3m0 18v-2M7.05 7.05 5.636 5.636m12.728 12.728L16.95 16.95M5 12H3m18 0h-2M7.05 16.95l-1.414 1.414M18.364 5.636 16.95 7.05M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"
+            />
+          </svg>
         </button>
       </div>
     </header>
@@ -79,550 +108,658 @@
     <!-- ------------SECTIONS DE LA PAGE-------------- -->
     <main>
       <!-- -----------------SECTION 1-------------------     -->
+      <div class="sur-moi">
+        <div class="photo-profil">
+          <div class="icon-profil">
+            <i class="fa-solid fa-codz"></i>
+          </div>
+
+          <img src="Images/julien.jp" alt="" />
+        </div>
+
+        <!-- -------------Texte Sur Moi---------------- -->
+        <div class="info-personl">
+          <div>
+            <p>
+              <span>&lt;span&gt;</span>
+              Hé, je suis ADOBOE Comlan julien
+              <span>&lt;/span&gt;</span>
+            </p>
+          </div>
+
+          <div class="senior-dev">
+            <h1>
+              Senior <span>{ Full Stack }</span> <br />
+              Développeur Web
+            </h1>
+          </div>
+
+          <div class="descrip">
+            <p>
+              <span>&lt;p&gt;</span> Avec une expertise dans les technologies de
+              pointe telles que
+              <span>NodeJS , React , Angular et Laravel</span> … je propose des
+              solutions Web à la fois innovantes et robustes.
+              <span>&lt;/p&gt;</span>
+            </p>
+          </div>
+
+          <div class="competence-img">
+            <div class="outils">
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div>
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div>
+              <span>...et plus</span>
+            </div>
+          </div>
+
+          <div class="button-dwd-my-cv">
+            <button>
+              <i class="fa-solid fa-download"></i>
+              <span> [ Télécharger Mon Cv ]</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- -----------------Les Succes terminés---------------- -->
+      <div class="succes">
+        <div class="valeur-of-succes">
+          <div class="valeur-icon">
+            <i class="fa-regular fa-square"></i>
+          </div>
+          <div class="valeur-text">
+            <div>
+              <span>12 </span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <div class="valeur-text-sucess">
+            <span> Expérience </span>
+          </div>
+        </div>
+
+        <div class="valeur-of-succes">
+          <div class="valeur-icon">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <div class="valeur-text">
+            <div>
+              <span> 250 </span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <div class="valeur-text-sucess">
+            <span> Projets Terminés </span>
+          </div>
+        </div>
+
+        <div class="valeur-of-succes">
+          <div class="valeur-icon">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="valeur-text">
+            <div>
+              <span> 650 </span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <div class="valeur-text-sucess">
+            <span> Clients satisfaits </span>
+          </div>
+        </div>
+
+        <div class="valeur-of-succes">
+          <div class="valeur-icon">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <div class="valeur-text">
+            <div>
+              <span> 80 </span>
+            </div>
+            <div>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <div class="valeur-text-sucess">
+            <span> Lauréat des prix </span>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------coperations--------------------- -->
+      <div class="coperation">
+        <!-- -----------Element 1---------------- -->
+        <div>
+          <p>. Coperation</p>
+
+          <h1>
+            Plus de 168 <span>entreprises</span> <br />
+            nous font confiance <span>dans le monde entier</span>
+          </h1>
+
+          <div>
+            <div>
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+            <div>
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div>
+                <div>
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <i class="fa-brands fa-skype"></i> <span>[Skype]</span>
+                  </div>
+                  <p>Julien.dev</p>
+                </div>
+                <div>
+                  <div>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>[Whatsapp]</span>
+                  </div>
+                  <p>+228 70 14 61 80</p>
+                </div>
+                <div>
+                  <div>
+                    <i class="fa-solid fa-envelope"></i><span>[Mail]</span>
+                  </div>
+                  <p>adoboejulien6@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------Element 2---------------- -->
+
+        <div class="timeline-container">
+          <h1 class="timeline-title">• Journal officiel de Git</h1>
+          <div class="timeline">
+            <div class="timeline-event">
+              <div class="timeline-event-date">15 juillet :</div>
+              <div class="timeline-event-description">
+                Muzzilla-streaming-API-services-for-Python
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">30 juin :</div>
+              <div class="timeline-event-description">
+                ChatHub-Chat-application-VueJs-Mongodb
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">26 mai :</div>
+              <div class="timeline-event-description">
+                Système de conservation du thé de la caféle facile
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">17 avril :</div>
+              <div class="timeline-event-description">
+                FinanceBuddy-Personal-Faissonneur de la finance
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">05 mars :</div>
+              <div class="timeline-event-description">
+                TuneStream-Music-streaming-service-API
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------------Des solutions design--------------------- -->
+
       <div>
-        <!-- -------------PHOTO DE PROFIL---------------- -->
+        <div>
+          <p>.Coopération</p>
+          <h2>
+            Concevoir des solutions
+            <span
+              >personnalisées <br />
+              pour répondre à vos exigences</span
+            >
+          </h2>
+        </div>
+
+        <div>
+          <div>
+            <div>
+              <div><i class="fa-solid fa-calendar-week"></i></div>
+            </div>
+
+            <h3>Développement Web et applications</h3>
+            <p>
+              Crafting d'interfaces visuellement attrayantes et conviviales
+              utilisant <span>HTML</span>, <span>CSS</span>,
+              <span>JavaScript</span> et des cadres modernes comme React et
+              Angular.
+            </p>
+          </div>
+
+          <div>
+            <div>
+              <div><i class="fa-solid fa-server"></i></div>
+            </div>
+
+            <h3>Gestion des bases de données</h3>
+            <p>
+              Concevoir et gérer des bases de données avec des technologies SQL
+              et NoSQL telles que <span>MySQL</span>, <span>PostgreSQL</span> et
+              <span>MongoDB</span>.
+            </p>
+          </div>
+
+          <div>
+            <div>
+              <div><i class="fa-solid fa-cloud"></i></div>
+            </div>
+
+            <h3>Développement de l'API</h3>
+            <p>
+              Créer et intégrer des <span>API RESTful</span> pour permettre une
+              communication fluide entre les systèmes front-end et back-end.
+            </p>
+          </div>
+
+          <div>
+            <div>
+              <div><i class="fa-solid fa-play"></i></div>
+            </div>
+
+            <h3>Optimisation des performances</h3>
+            <p>
+              Améliorer la vitesse et les performances des applications web pour
+              offrir une meilleure expérience à l'utilisateur. Travail avec
+              <span>Nodejs</span>, <span>Express</span>
+            </p>
+          </div>
+
+          <div>
+            <div>
+              <div><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+            <h3>Solutions de commerce électronique</h3>
+            <p>
+              Développer des solutions de paiement évolutives et sécurisées pour
+              <span>les plateformes de commerce électronique</span> adaptées aux
+              besoins de votre entreprise.
+            </p>
+          </div>
+
+          <div>
+            <div>
+              <div><i class="fa-solid fa-head-side-cough"></i></div>
+            </div>
+
+            <h3>Intégrer l'IA</h3>
+            <p>
+              Stimulez vos applications avec l'IA pour améliorer l'efficacité,
+              l'automatisation et améliorer l'expérience utilisateur
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            Je suis ravi de prendre en charge de
+            <span>nouveaux projets</span> et de collaborer. <br />
+            Parlons de vos idées. <span>Cédez à l'écart</span>.
+          </p>
+        </div>
+      </div>
+
+      <!-- ---------------------Expérience--------------------- -->
+      <div>
+        <div>
+          <p>.Expericence</p>
+          <h3>
+            <span>+12</span>years of <span>passion</span> for <br />
+            programming techniques
+          </h3>
+        </div>
+
+        <div>
+          <div>
+            <div>
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div>
+                <h3>Google</h3>
+                <p>2018 - présent</p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div>
+                <h3>Twitter</h3>
+                <p>2012 - 2015</p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div>
+                <h3>Amazon</h3>
+                <p>2018 - présent</p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div>
+                <h3>Google</h3>
+                <p>2018 - présent</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Ingénieur logiciel principal</h3>
+
+            <div>
+              <p>
+                . A dirigé le développement d'applications Web évolutives,
+                améliorant les performances et l'expérience des utilisateurs
+                pour des millions d'utilisateurs.
+              </p>
+              <p>
+                . Mise en œuvre d'algorithmes d'apprentissage automatique pour
+                améliorer la fonctionnalité de recherche.
+              </p>
+              <p>
+                . Collaboré avec des équipes multifonctions pour intégrer de
+                nouvelles fonctionnalités de manière transparente.
+              </p>
+            </div>
+
+            <div>
+              <div>
+                <span>Python</span>
+              </div>
+
+              <div>
+                <span>Clairage a la passion</span>
+              </div>
+
+              <div>
+                <span>Angulelle</span>
+              </div>
+
+              <div>
+                <span>CBG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------Suite expérience--------------------- -->
+
+      <div>
+        <div class="timeline-container">
+          <h1 class="timeline-title">• Journal officiel de Git</h1>
+          <div class="timeline">
+            <div class="timeline-event">
+              <div class="timeline-event-date">15 juillet :</div>
+              <div class="timeline-event-description">
+                Muzzilla-streaming-API-services-for-Python
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">30 juin :</div>
+              <div class="timeline-event-description">
+                ChatHub-Chat-application-VueJs-Mongodb
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">26 mai :</div>
+              <div class="timeline-event-description">
+                Système de conservation du thé de la caféle facile
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">17 avril :</div>
+              <div class="timeline-event-description">
+                FinanceBuddy-Personal-Faissonneur de la finance
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">05 mars :</div>
+              <div class="timeline-event-description">
+                TuneStream-Music-streaming-service-API
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-container">
+          <h1 class="timeline-title">• Journal officiel de Git</h1>
+          <div class="timeline">
+            <div class="timeline-event">
+              <div class="timeline-event-date">15 juillet :</div>
+              <div class="timeline-event-description">
+                Muzzilla-streaming-API-services-for-Python
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">30 juin :</div>
+              <div class="timeline-event-description">
+                ChatHub-Chat-application-VueJs-Mongodb
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">26 mai :</div>
+              <div class="timeline-event-description">
+                Système de conservation du thé de la caféle facile
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">17 avril :</div>
+              <div class="timeline-event-description">
+                FinanceBuddy-Personal-Faissonneur de la finance
+              </div>
+            </div>
+            <div class="timeline-event">
+              <div class="timeline-event-date">05 mars :</div>
+              <div class="timeline-event-description">
+                TuneStream-Music-streaming-service-API
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------------Mes oeuvres recentes --------------------- -->
+
+      <div>
+        <div>
+          <p>.projet</p>
+          <h2>Mes oeuvres recentes</h2>
+        </div>
+
         <div>
           <div>
             <img src="" alt="" />
           </div>
           <div>
-            <img src="Images/favicon.svg" alt="" />
+            <h3>
+              Intégration de l'IA dans le systeme d'une platform E-commerce
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
+              harum at sed possimus laudantium nulla praesentium
+            </p>
+            <p>profil info</p>
+            <hr />
+            <div>
+              <p>client</p>
+              <p>JS conceptuels</p>
+            </div>
+            <hr />
+            <div>
+              <p>Delais d'achevement</p>
+              <p>6 Mois</p>
+            </div>
+            <hr />
+            <div>
+              <p>technologies</p>
+              <p>NodeJS, JavaScript, html, css</p>
+            </div>
+
+            <div>
+              <p>Demo en Direct</p>
+              <p>Vue sur Github</p>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- -------------Texte Sur Moi---------------- -->
+      <!-- ---------------------Mes compétences--------------------- -->
+
+      <div>
+        <div>
+          <p>.Compétence</p>
+          <h3>Mes Compétences</h3>
+        </div>
         <div>
           <div>
-            <span>&lt;span&gt;Hé, je suis James</span>&lt;/span&gt;</span> 
-          </div>
-
-          <div>
-            <h1>Développeur Web et Apps Senior { Full  <br> Stack } </h1>
-          </div>
-
-          <div>
-            <p> &lt;p&gt; Avec une expertise dans les technologies de pointe telles que NodeJS , React , Angular et Laravel … je propose des solutions Web à la fois innovantes et robustes. &lt;/p&gt;</p>
-          </div>
-
-          <div>
             <div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
             </div>
             <div>
-                <span>...et plus</span>
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
             </div>
           </div>
-
           <div>
-            <button>
-                <i class="fa-solid fa-download"></i>
-                <span> [ Télécharger Mon Cv ]</span>
-            </button>
+            <p>
+              <span>.</span> Avant-matge:
+              <span>HTML, CSS, JavaScript, React, Angulaire</span>
+            </p>
+            <p>
+              <span>.</span> Vers le fond:
+              <span>Node.js, Express, Python, Django</span>
+            </p>
+            <p>
+              <span>.</span> Base des données
+              <span>MySQL, PostgreSQL, MongoDB</span>
+            </p>
+            <p>
+              <span>.</span> Outils et plates-formes:
+              <span>Git, Docker, AWS, Heroku</span>
+            </p>
+            <p>
+              <span>.</span> Autres
+              <span>API RESTful, GraphQL, méthodes Agile</span>
+            </p>
           </div>
         </div>
+      </div>
 
-        <!-- -----------------Les Succes terminés---------------- -->
-        <div>
-            <div>
-                  <div>
-                    <i class="fa-regular fa-square"></i>
-                  </div>
-                  <div>
-                      <div>
-                        <span> 100 </span>
-                      </div>
-                      <div>
-                        <i class="fa-solid fa-plus"></i>
-                      </div>
-                  </div>
-                  <div>
-                      <span> Expérience </span>
-                  </div>
-            </div>
+      <!-- ---------------------Contact--------------------- -->
 
-            <div>
-              <div>
-                <i class="fa-solid fa-desktop"></i>
-              </div>
-              <div>
-                  <div>
-                    <span> 100 </span>
-                  </div>
-                  <div>
-                    <i class="fa-solid fa-plus"></i>
-                  </div>
-              </div>
-              <div>
-                  <span> Projets Terminés </span>
-              </div>
-            </div>
-
-            <div>
-            <div>
-              <i class="fa-regular fa-heart"></i>
-            </div>
-            <div>
-                <div>
-                  <span> 100 </span>
-                </div>
-                <div>
-                  <i class="fa-solid fa-plus"></i>
-                </div>
-            </div>
-            <div>
-                <span> Clients satisfaits </span>
-            </div>
-            </div>
-
-            <div>
-          <div>
-            <i class="fa-solid fa-medal"></i>
+      <div class="container">
+        <!-- Form Section -->
+        <div class="form-section">
+          <h1>Connectons-nous</h1>
+          <div class="form-container">
+            <input type="text" placeholder="Votre nom" />
+            <input type="text" placeholder="Téléphone" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Objet" />
+            <textarea placeholder="Message" rows="5"></textarea>
           </div>
-          <div>
-              <div>
-                <span> 100 </span>
-              </div>
-              <div>
-                <i class="fa-solid fa-plus"></i>
-              </div>
-          </div>
-          <div>
-              <span> Lauréat des prix </span>
-          </div>
-            </div>
-        </div>
-        <!-- ---------------------coperations--------------------- -->
-        <div>
-        <!-- -----------Element 1---------------- -->
-          <p>. Coperation</p>
-
-          <h1>Plus de 168 <span>entreprises</span> <br> nous font confiance <span>dans le monde entier</span></h1>
-
-          <div>
-            <div>
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-            </div>
-            <div>
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-            </div>
-          </div>
-
-          <div>
-
-            <div>
-              <div>
-                <div>
-                  <img src="" alt="">
-                </div>
-              </div>
-            </div>
-
-
-            <div>
-              <div>
-                
-                <div>
-                  <div><i class="fa-brands fa-skype"></i> <span>[Skype]</span></div>
-                  <p>Julien.dev</p>
-                </div>
-                <div>
-                  <div><i class="fa-brands fa-whatsapp"></i> <span>[Whatsapp]</span></div>
-                  <p>+228 70 14 61 80</p>
-                </div>
-                <div>
-                  <div><i class="fa-solid fa-envelope"></i><span>[Mail]</span></div>
-                  <p>adoboejulien6@gmail.com</p>
-              </div>
-              </div>
-            </div>
-
-          </div>
-
-        <!-- ----------------Element 2---------------- -->
-
-          <div class="timeline-container">
-            <h1 class="timeline-title">• Journal officiel de Git</h1>
-            <div class="timeline">
-              <div class="timeline-event">
-                <div class="timeline-event-date">15 juillet :</div>
-                <div class="timeline-event-description">Muzzilla-streaming-API-services-for-Python</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">30 juin :</div>
-                <div class="timeline-event-description">ChatHub-Chat-application-VueJs-Mongodb</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">26 mai :</div>
-                <div class="timeline-event-description">Système de conservation du thé de la caféle facile</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">17 avril :</div>
-                <div class="timeline-event-description">FinanceBuddy-Personal-Faissonneur de la finance</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">05 mars :</div>
-                <div class="timeline-event-description">TuneStream-Music-streaming-service-API</div>
-              </div>
-            </div>
-          </div>
-
+          <button class="submit-button">Envoyer un message &#8599;</button>
         </div>
 
-        <!-- ---------------------Des solutions design--------------------- -->
-        
-        <div>
-
-          <div>
-            <p>.Coopération</p>
-            <h2>Concevoir des solutions <span>personnalisées <br> pour répondre à vos exigences</span></h2>
-          </div>
-
-          <div>
+        <!-- Contact Section -->
+        <div class="contact-section">
+          <div class="contact-item">
+            <span>📞</span>
             <div>
-            
-              <div>
-                <div><i class="fa-solid fa-calendar-week"></i></div>
-              </div>
-  
-              <h3>Développement Web et applications</h3>
-              <p>Crafting d'interfaces visuellement attrayantes et conviviales utilisant <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> et des cadres modernes comme React et Angular.</p>
-            </div>
-
-            <div>
-            
-              <div>
-                <div><i class="fa-solid fa-server"></i></div>
-              </div>
-  
-              <h3>Gestion des bases de données</h3>
-              <p>Concevoir et gérer des bases de données avec des technologies SQL et NoSQL telles que <span>MySQL</span>, <span>PostgreSQL</span> et <span>MongoDB</span>.</p>
-            </div>
-
-            <div>
-            
-              <div>
-                <div><i class="fa-solid fa-cloud"></i></div>
-              </div>
-  
-              <h3>Développement de l'API</h3>
-              <p>Créer et intégrer des <span>API RESTful</span> pour permettre une communication fluide entre les systèmes front-end et back-end.</p>
-            </div>
-
-            <div>
-            
-              <div>
-                <div><i class="fa-solid fa-play"></i></div>
-              </div>
-  
-              <h3>Optimisation des performances</h3>
-              <p>Améliorer la vitesse et les performances des applications web pour offrir une meilleure expérience à l'utilisateur. Travail avec <span>Nodejs</span>, <span>Express</span></p>
-            </div>
-
-            <div>
-            
-              <div>
-                <div><i class="fa-solid fa-cart-shopping"></i></div>
-              </div>
-  
-              <h3>Solutions de commerce électronique</h3>
-              <p>Développer des solutions de paiement évolutives et sécurisées pour <span>les plateformes de commerce électronique</span> adaptées aux besoins de votre entreprise.</p>
-            </div>
-
-            <div>
-            
-              <div>
-                <div><i class="fa-solid fa-head-side-cough"></i></div>
-              </div>
-  
-              <h3>Intégrer l'IA</h3>
-              <p>Stimulez vos applications avec l'IA pour améliorer l'efficacité, l'automatisation et améliorer l'expérience utilisateur</p>
+              <p>Numéro de téléphone</p>
+              <p>1-234-567-8901</p>
             </div>
           </div>
-
-          <div>
-            <p>Je suis ravi de prendre en charge de <span>nouveaux projets</span> et de collaborer. <br> Parlons de vos idées. <span>Cédez à l'écart</span>.</p>
-          </div>
-        </div>
-
-        <!-- ---------------------Expérience--------------------- -->
-        <div>
-          <div>
-            <p>.Expericence</p>
-            <h3><span>+12</span>years of <span>passion</span> for <br> programming techniques</h3>
-          </div>
-
-          <div>
+          <div class="contact-item">
+            <span>📧</span>
             <div>
-              <div>
-                <div>
-                  <img src="" alt="">
-                </div>
-                <div>
-                  <h3>Google</h3>
-                  <p>2018 - présent </p>
-                </div>
-              </div>
-
-              <div>
-                <div>
-                  <img src="" alt="">
-                </div>
-                <div>
-                  <h3>Twitter</h3>
-                  <p>2012 - 2015 </p>
-                </div>
-              </div>
-
-              <div>
-                <div>
-                  <img src="" alt="">
-                </div>
-                <div>
-                  <h3>Amazon</h3>
-                  <p>2018 - présent </p>
-                </div>
-              </div>
-
-              <div>
-                <div>
-                  <img src="" alt="">
-                </div>
-                <div>
-                  <h3>Google</h3>
-                  <p>2018 - présent </p>
-                </div>
-              </div>
+              <p>Courriel</p>
+              <p>Contact-william.design</p>
             </div>
-
+          </div>
+          <div class="contact-item">
+            <span>💬</span>
             <div>
-              <h3>Ingénieur logiciel principal</h3>
-
-              <div>
-                <p> . A dirigé le développement d'applications Web évolutives, améliorant les performances et l'expérience des utilisateurs pour des millions d'utilisateurs.</p>
-                <p> . Mise en œuvre d'algorithmes d'apprentissage automatique pour améliorer la fonctionnalité de recherche.</p>
-                <p> . Collaboré avec des équipes multifonctions pour intégrer de nouvelles fonctionnalités de manière transparente.</p>
-              </div>
-
-              <div>
-                <div>
-                  <span>Python</span>
-                </div>
-
-                <div>
-                  <span>Clairage a la passion</span>
-                </div>
-
-                <div>
-                  <span>Angulelle</span>
-                </div>
-
-                <div>
-                  <span>CBG</span>
-                </div>
-              </div>
-
+              <p>Skype</p>
+              <p>WilliamDesignUX</p>
             </div>
           </div>
-
-        </div>
-
-        <!-- --------------------Suite expérience--------------------- -->
-        
-        <div>
-          <div class="timeline-container">
-            <h1 class="timeline-title">• Journal officiel de Git</h1>
-            <div class="timeline">
-              <div class="timeline-event">
-                <div class="timeline-event-date">15 juillet :</div>
-                <div class="timeline-event-description">Muzzilla-streaming-API-services-for-Python</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">30 juin :</div>
-                <div class="timeline-event-description">ChatHub-Chat-application-VueJs-Mongodb</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">26 mai :</div>
-                <div class="timeline-event-description">Système de conservation du thé de la caféle facile</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">17 avril :</div>
-                <div class="timeline-event-description">FinanceBuddy-Personal-Faissonneur de la finance</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">05 mars :</div>
-                <div class="timeline-event-description">TuneStream-Music-streaming-service-API</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-container">
-            <h1 class="timeline-title">• Journal officiel de Git</h1>
-            <div class="timeline">
-              <div class="timeline-event">
-                <div class="timeline-event-date">15 juillet :</div>
-                <div class="timeline-event-description">Muzzilla-streaming-API-services-for-Python</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">30 juin :</div>
-                <div class="timeline-event-description">ChatHub-Chat-application-VueJs-Mongodb</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">26 mai :</div>
-                <div class="timeline-event-description">Système de conservation du thé de la caféle facile</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">17 avril :</div>
-                <div class="timeline-event-description">FinanceBuddy-Personal-Faissonneur de la finance</div>
-              </div>
-              <div class="timeline-event">
-                <div class="timeline-event-date">05 mars :</div>
-                <div class="timeline-event-description">TuneStream-Music-streaming-service-API</div>
-              </div>
+          <div class="contact-item">
+            <span>📍</span>
+            <div>
+              <p>Adresse</p>
+              <p>0811 Erdman Prairie, Joaville CA</p>
             </div>
           </div>
         </div>
-
-        <!-- ---------------------Mes oeuvres recentes --------------------- -->
-        
-        <div>
-
-          <div>
-            <p>.projet</p>
-            <h2>Mes oeuvres recentes</h2>
-          </div>
-
-          <div>
-            <div>
-              <img src="" alt="">
-            </div>
-            <div>
-              <h3>Intégration de l'IA dans le systeme d'une platform E-commerce</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, harum at sed possimus laudantium nulla praesentium </p>
-              <p>profil info</p>
-              <hr>
-              <div>
-                <p>client</p>
-                <p>JS conceptuels</p>
-              </div>
-              <hr>
-              <div>
-                <p>Delais d'achevement </p>
-                <p>6 Mois</p>
-              </div>
-              <hr>
-              <div>
-                <p>technologies</p>
-                <p>NodeJS, JavaScript, html, css</p>
-              </div>
-
-              <div>
-                <p>Demo en Direct</p>
-                <p>Vue sur Github</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- ---------------------Mes compétences--------------------- -->
-
-        <div>
-          <div>
-            <p>.Compétence</p>
-            <h3>Mes Compétences</h3>
-          </div>
-          <div>
-            <div>
-              <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-              </div>
-              <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-              </div>
-            </div>
-            <div>
-              <p><span>.</span> Avant-matge: <span>HTML, CSS, JavaScript, React, Angulaire</span></p>
-              <p><span>.</span> Vers le fond: <span>Node.js, Express, Python, Django</span></p>
-              <p><span>.</span> Base des données <span>MySQL, PostgreSQL, MongoDB</span></p>
-              <p><span>.</span> Outils et plates-formes: <span>Git, Docker, AWS, Heroku</span></p>
-              <p><span>.</span> Autres <span>API RESTful, GraphQL, méthodes Agile</span></p>
-            </div>
-          </div>
-        </div>
-
-        <!-- ---------------------Contact--------------------- -->
-
-        <div class="container">
-          <!-- Form Section -->
-          <div class="form-section">
-            <h1>Connectons-nous</h1>
-            <div class="form-container">
-              <input type="text" placeholder="Votre nom">
-              <input type="text" placeholder="Téléphone">
-              <input type="email" placeholder="Email">
-              <input type="text" placeholder="Objet">
-              <textarea placeholder="Message" rows="5"></textarea>
-            </div>
-            <button class="submit-button">Envoyer un message &#8599;</button>
-          </div>
-      
-          <!-- Contact Section -->
-          <div class="contact-section">
-            <div class="contact-item">
-              <span>📞</span>
-              <div>
-                <p>Numéro de téléphone</p>
-                <p>1-234-567-8901</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <span>📧</span>
-              <div>
-                <p>Courriel</p>
-                <p>Contact-william.design</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <span>💬</span>
-              <div>
-                <p>Skype</p>
-                <p>WilliamDesignUX</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <span>📍</span>
-              <div>
-                <p>Adresse</p>
-                <p>0811 Erdman Prairie, Joaville CA</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      
-
-
+      </div>
     </main>
 
     <footer>
-      <hr>
+      <hr />
       <div>
         <div><i class="fa-solid fa-code"></i></div>
         <p>Julien.MPN.Dev</p>
@@ -644,7 +781,6 @@
       </div>
 
       <div>
-
         <div>
           <a href="">Sur Moi</a>
         </div>
@@ -661,9 +797,9 @@
           <a href="">Contact</a>
         </div>
       </div>
-       <div>
+      <div>
         <p>© 2021 Julien.MPN.Dev. Tous droits réservés.</p>
-       </div>
+      </div>
     </footer>
   </body>
 </html>
