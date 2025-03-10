@@ -31,17 +31,17 @@
     <!-- ------------HEADER DE LA PAGE-------------- -->
     <header>
       <div class="menu-button">
-        <button>
+        <button class="inaside">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
 
       <div class="logo">
         <div>
-          <i class="fa-solid fa-code"></i>
+          <a href="index.html"><i class="fa-solid fa-code"></i></a>
         </div>
         <div>
-          <span>Julien.Dev</span>
+          <a href="index.html"><span>Julien.Dev</span></a>
         </div>
       </div>
 
@@ -72,18 +72,24 @@
           <a href=""><i class="fa-brands fa-facebook"></i></a>
         </div>
         <div>
-          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://x.com/JulienAdob67161"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
         </div>
         <div>
-          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/julien-comlan-adoboe-1a60162b9/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
         </div>
         <div>
-          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/06julien"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
       </div>
 
       <div class="button-mode">
-        <button>
+        <button class="toggleButton">
           <svg
             class="w-6 h-6 text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -105,16 +111,67 @@
       </div>
     </header>
 
+    <div class="aside apear">
+      <div class="aside-container">
+        <div class="close-button-aside">
+          <div>
+            <button class="aside-close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+        <h1>Mettez-vous en contact</h1>
+        <div class="ligne-aside"></div>
+        <p class="j-suis-ravi">
+          Je suis toujours ravi de prendre de nouveaux projets et de collaborer
+          avec des esprits innovants.
+        </p>
+        <div>
+          <p>
+            Numéro de téléphone : <br />
+            <span>+228 70 14 61 80</span> <br />
+            <br />
+            Mail : <br />
+            <span>adoboejulien6@gmail.com</span> <br />
+            <br />
+            Skype : <br />
+            <span>Julien comlan ADOBOE</span> <br />
+            <br />
+            Adresse : <br />
+            <span>42 Tokoin Novissi, Lomé - Togo</span>
+          </p>
+        </div>
+        <div>
+          <p>Media social</p>
+          <div class="aside-icon">
+            <div>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aside-backgroud"></div>
+    </div>
+
     <!-- ------------SECTIONS DE LA PAGE-------------- -->
     <main>
       <!-- -----------------SECTION 1-------------------     -->
       <div class="sur-moi">
         <div class="photo-profil">
-          <div class="icon-profil">
+          <div class="icon-profi">
             <i class="fa-solid fa-codz"></i>
           </div>
 
-          <img src="Images/julien.jp" alt="" />
+          <img src="Images/Sans titre-1.png" alt="" />
         </div>
 
         <!-- -------------Texte Sur Moi---------------- -->
@@ -146,18 +203,7 @@
 
           <div class="competence-img-section">
             <div class="outils">
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <img src="" alt="" />
-              </div>
+              <!-- Les éléments seront ajoutés dynamiquement par JavaScript -->
             </div>
             <div>
               <span>...et plus</span>
@@ -849,5 +895,6 @@
         </div>
       </div>
     </footer>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
