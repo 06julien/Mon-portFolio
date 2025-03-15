@@ -28,8 +28,9 @@
     <title>Julien.MpN.dev</title>
   </head>
   <body>
+    <div id="circle"></div>
     <!-- ------------HEADER DE LA PAGE-------------- -->
-    <header>
+    <header id="scroll-top">
       <div class="menu-button">
         <button class="inaside">
           <i class="fa-solid fa-bars"></i>
@@ -55,13 +56,13 @@
               <a href="">Cv</a>
             </li>
             <li>
-              <a href="">Service</a>
+              <a href="#service">Service</a>
             </li>
             <li>
               <a href="">Portfolio</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -69,20 +70,22 @@
 
       <div class="social-media-header">
         <div>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </div>
         <div>
-          <a href="https://x.com/JulienAdob67161"
+          <a href="https://x.com/JulienAdob67161" target="_blank"
             ><i class="fa-brands fa-x-twitter"></i
           ></a>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/julien-comlan-adoboe-1a60162b9/"
+          <a
+            href="https://www.linkedin.com/in/julien-comlan-adoboe-1a60162b9/"
+            target="_blank"
             ><i class="fa-brands fa-linkedin-in"></i
           ></a>
         </div>
         <div>
-          <a href="https://github.com/06julien"
+          <a href="https://github.com/06julien" target="_blank"
             ><i class="fa-brands fa-github"></i
           ></a>
         </div>
@@ -213,7 +216,7 @@
           <div class="button-dwd-my-cv">
             <button>
               <i class="fa-solid fa-download"></i>
-              <span> [ Télécharger Mon Cv ]</span>
+              <span> <a href="">[ Télécharger Mon Cv ]</a></span>
             </button>
           </div>
         </div>
@@ -397,7 +400,7 @@
 
       <!-- ---------------------Des solutions design--------------------- -->
 
-      <div class="solution-design">
+      <div class="solution-design" id="service">
         <div class="solution-design-title">
           <p>.Coopération</p>
           <h2>
@@ -807,7 +810,7 @@
 
       <!-- ---------------------Contact--------------------- -->
 
-      <div class="container">
+      <div class="container" id="contact">
         <!-- Form Section -->
         <div class="form-section">
           <h1>Connectons-nous</h1>
@@ -854,6 +857,10 @@
         </div>
       </div>
     </main>
+
+    <div class="scroll-top">
+      <a href="#scroll-top"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
 
     <footer>
       <hr />

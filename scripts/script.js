@@ -1,3 +1,12 @@
+const circle = document.getElementById("circle");
+
+document.addEventListener("mousemove", (event) => {
+  const x = event.clientX;
+  const y = event.clientY;
+  circle.style.left = `${x}px`;
+  circle.style.top = `${y}px`;
+});
+
 // ---------------Headers----------------
 
 const AsideButton = document.querySelector(".inaside");
@@ -36,7 +45,7 @@ const outils = document.querySelector(".outils");
 const elements = outils.querySelectorAll("div");
 
 const zoneWidth = outils.offsetWidth; // Largeur de la zone
-const elementWidth = 50; // Largeur des éléments (carrés)
+const elementWidth = 10; // Largeur des éléments (carrés)
 
 elements.forEach((element, index) => {
   // Position verticale fixe pour une seule ligne
@@ -64,8 +73,7 @@ elements.forEach((element, index) => {
 
 //   ----------------sur moi -------------
 const images = [
-  "/Images/React_JS_Logo-removebg-preview.png",
-  "/Images/HTML_Logo_PNG_-_Free_Download_PNG__JPG__PDF__Mockup-removebg-preview.png",
+  "/Images/Javascript_Logo_PNG-removebg-preview.png",
   "/Images/Laravel_Logo_PNG-removebg-preview.png",
   "/Images/Node_JS_PNG_Logo-removebg-preview.png",
   "/Images/Firebase_Logo_PNG-removebg-preview.png",
@@ -80,3 +88,5 @@ images.forEach((src, index) => {
   div.style.animationDelay = `${index * 2}s`;
   outils.appendChild(div);
 });
+
+// ----------------contour lumineuscente -------------
