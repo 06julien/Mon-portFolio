@@ -15,6 +15,8 @@ body {
   position: relative;
   background-image: url("/Images/Abstract_Technology_Binary_Code_Background_Digital_Binary_Data_and_Secure_Data_Concept_with_Number_0_and_1-removebg-preview.png");
   background-repeat: repeat-x;
+  background-color: rgb(31, 31, 36, 1);
+  color: #ffffff;
 
   font-family: "Dosis", sans-serif;
   top: 2rem;
@@ -22,6 +24,11 @@ body {
   min-height: 100vh;
   overflow: hidden auto;
 }
+/* 
+body.dark-mode {
+  background-color: rgb(31, 31, 36, 1);
+  color: #ffffff;
+} */
 
 #circle {
   width: 30px;
@@ -31,16 +38,12 @@ body {
   border-radius: 10%;
   position: absolute;
   pointer-events: none;
-  transform: translate(-40%, -150%);
+  transform: translate(0%, -0%);
 }
 /* --------------Mode sombre & Mode clair---------------- */
-body.dark-mode {
-  background-color: rgb(31, 31, 36, 1);
-  color: #ffffff;
-}
 
 body.light-mode {
-  background: linear-gradient(to right, #cfcfcf, #8a8a8a);
+  background: linear-gradient(to right, #8a8a8a, #cfcfcf);
   /* background-image: url("/Images/Rol_Fk-removebg-preview.png"); */
   /* background-repeat: repeat-x; */
   color: #000000;
@@ -57,13 +60,18 @@ body.light-mode {
   }
   .menu-button button {
     background-color: #87878736;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 12.8px 0px 0px 12.8px;
   }
 
   .button-mode button {
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 12.8px 12.8px 0px;
     background-color: #87878736;
   }
+
+  .button-mode-sombre button i {
+    color: #ffc107;
+  }
+
   .sur-moi {
     background: linear-gradient(to right, #616161, #313131);
     color: #ffffff;
@@ -74,6 +82,27 @@ body.light-mode {
 
   .outils div {
     border: 1px solid #606763;
+  }
+
+  .succes {
+    background: linear-gradient(to right, #616161, #313131);
+    color: #ffffff;
+  }
+
+  .succes i:hover {
+    color: #00f2ff;
+  }
+  .coperation-info {
+    background: linear-gradient(to right, #616161, #313131);
+    color: #ffffff;
+  }
+
+  .coperation-info .info-cercle-text p {
+    color: #00f2ff;
+  }
+  .timeline-container {
+    background: linear-gradient(to right, #4f4e4e, #313131);
+    color: #ffffff;
   }
 }
 
@@ -302,9 +331,33 @@ header ul li a:hover {
   border-radius: 0px 5px 5px 0px;
 }
 
+.toggleButton.visible {
+  display: none;
+}
+
 .button-mode svg path {
   font-size: 22px;
   color: #ffc107;
+}
+
+.button-mode-sombre button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 76px;
+  height: 80.1px;
+  margin: 0;
+  background-color: #32323b;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.button-mode-sombre button i {
+  font-size: 22px;
+}
+
+.toggleButton-mode-clair.visible {
+  display: flex;
 }
 
 .sur-moi {
@@ -338,6 +391,12 @@ header ul li a:hover {
   100% {
     border-color: #7cff4c;
   }
+}
+
+.myname i {
+  background-color: #00f2ff;
+  fill: #ffff;
+  font-size: 50px;
 }
 
 .photo-profil {
@@ -501,12 +560,14 @@ header ul li a:hover {
 }
 
 .timeline-container {
-  max-width: 600px;
+  width: 856px;
+  height: 517px;
   background-color: #272730;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #393f3c;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.03);
+  font-size: 39px;
 }
 
 .timeline-title {
@@ -882,7 +943,7 @@ textarea::placeholder {
 
 @keyframes borderAnimationsolution {
   0% {
-    border-color: ;
+    border-color: #7cff4c;
   }
   33% {
     border-color: transparent transparent transparent #7cff4c;
@@ -1093,14 +1154,14 @@ textarea::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 6.6rem;
   margin-top: 1.5rem;
   margin-left: 2%;
   width: 1292;
 }
 
 .timeline-container {
-  width: 660px;
+  width: 590px;
   height: 560px;
 }
 

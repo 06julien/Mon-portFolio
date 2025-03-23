@@ -27,16 +27,28 @@ function Buttonclose() {
 
 close.addEventListener("click", Buttonclose);
 
-const toggleButton = document.querySelector(".toggleButton");
-const body = document.body;
+// -------------mode claire et sombre--------------
 
-toggleButton.addEventListener("click", () => {
+const body = document.body;
+const changeMode = document.querySelector(".button-mode");
+const changeModeSombre = document.querySelector(".button-mode-sombre");
+const togglleButtonClair = document.querySelector(".toggleButton");
+const modchangebuttonSombre = document.querySelector(
+  ".toggleButton-mode-clair"
+);
+console.log(modchangebuttonSombre);
+
+changeMode.addEventListener("click", () => {
   if (body.classList.contains("dark-mode")) {
     body.classList.remove("dark-mode");
     body.classList.add("light-mode");
+    togglleButtonClair.classList.add("visible");
+    modchangebuttonSombre.classList.add("visible");
   } else {
     body.classList.remove("light-mode");
     body.classList.add("dark-mode");
+    togglleButtonClair.classList.remove("visible");
+    modchangebuttonSombre.classList.remove("visible");
   }
 });
 
@@ -59,7 +71,7 @@ elements.forEach((element, index) => {
     if (position > zoneWidth) {
       position = -elementWidth; // Réinitialiser à gauche
     }
-    element.style.left = `${position}px`;
+    element.style.right = `${position}px`;
 
     // Appeler la fonction pour la prochaine image
     requestAnimationFrame(animate);
@@ -68,7 +80,7 @@ elements.forEach((element, index) => {
   // Décaler le démarrage des animations pour chaque élément
   setTimeout(() => {
     animate();
-  }, index * 200); // Décalage de 200ms entre chaque élément
+  }, index * -200); // Décalage de 200ms entre chaque élément
 });
 
 //   ----------------sur moi -------------
@@ -85,8 +97,8 @@ images.forEach((src, index) => {
   const img = document.createElement("img");
   img.src = src;
   div.appendChild(img);
-  div.style.animationDelay = `${index * 2}s`;
+  div.style.animationDelay = `${index * -2}s`;
   outils.appendChild(div);
 });
 
-// ----------------contour lumineuscente -------------
+// ----------------contour slyde -------------
