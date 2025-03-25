@@ -58,6 +58,10 @@ body.light-mode {
   .logo i {
     color: #7cff4c;
   }
+
+  nav li a {
+    color: #dadada;
+  }
   .menu-button button {
     background-color: #87878736;
     border-radius: 12.8px 0px 0px 12.8px;
@@ -797,12 +801,12 @@ textarea::placeholder {
 
 .coperation-img div {
   width: 860px;
-  height: 28px;
+  height: 8px;
 }
 
 .coperation-img div img {
-  width: 100px;
-  height: 28px;
+  width: 90px;
+  height: 98px;
 }
 
 .coperation-cercle-info {
