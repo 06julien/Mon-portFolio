@@ -472,7 +472,7 @@ header ul li a:hover {
 }
 
 .senior-dev h1 {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .senior-dev h1 span {
@@ -823,26 +823,32 @@ textarea::placeholder {
 }
 
 .coperation-img {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  gap: 0.5rem;
-  padding-left: 20px;
+  gap: 1.9rem;
+  margin-left: 15px;
   border-radius: 10px;
   border: 1px solid #393f3c;
   width: 724px;
   height: 90px;
+  overflow: hidden;
 }
 
-.coperation-img div {
-  width: 860px;
+.coperation-img .copration-img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 720px;
   height: 8px;
 }
 
-.coperation-img div img {
-  width: 90px;
-  height: 98px;
+.coperation-img .copration-img-section div img {
+  width: 106px;
+  height: 80px;
 }
 
 .coperation-cercle-info {
@@ -879,8 +885,8 @@ textarea::placeholder {
 .coperation-cercle-petite img {
   margin-left: 5px;
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 .coperation-cercle-petite div i {
   font-size: 7px;
@@ -1527,4 +1533,35 @@ footer hr {
   gap: 1rem;
   font-size: 18px;
   margin-bottom: 1rem;
+}
+
+/* Animation pour le slide vers la gauche */
+@keyframes slide-left {
+  0% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
+/* Animation pour le slide vers la droite */
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Appliquez les animations aux sections */
+#copration-img-section-one {
+  display: flex;
+  animation: slide-left 10s linear infinite;
+}
+
+#copration-img-section-two {
+  display: flex;
+  animation: slide-right 10s linear infinite;
 }
