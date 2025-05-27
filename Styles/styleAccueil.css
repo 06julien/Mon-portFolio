@@ -905,9 +905,13 @@ textarea::placeholder {
   width: 270px;
   height: 96px;
 }
-.info-cercle p {
+.info-cercle p a {
   color: #dd6ea9;
 }
+.info-cercle p a:hover {
+  color: #7cff4c;
+}
+
 .info-cercle i {
   font-size: 22px;
 }

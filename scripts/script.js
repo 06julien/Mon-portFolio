@@ -18,7 +18,7 @@ AsideButton.addEventListener("click", () => {
   ElmentAside.classList.remove("slide-out");
   ElmentAside.classList.remove("slide-out-r");
   ElmentAside.classList.add("slide-in-from-left"); // Ajout de la classe pour l'animation
-  ElmentAside.classList.remove("slide-in-from-Right");
+  //ElmentAside.classList.remove("slide-in-from-Right");
 });
 
 function Buttonclose() {
@@ -26,7 +26,7 @@ function Buttonclose() {
   ElmentAside.classList.add("slide-out");
   ElmentAside.classList.remove("slide-out-r");
   ElmentAside.classList.remove("slide-in-from-left");
-  ElmentAside.classList.add("slide-in-from-Right"); // Suppression de la classe pour l'animation
+  //ElmentAside.classList.add("slide-in-from-Right"); // Suppression de la classe pour l'animation
 }
 
 close.addEventListener("click", Buttonclose);
@@ -165,3 +165,34 @@ function typeText() {
 
 typingElement.textContent = ""; // Efface le contenu initial
 typeText();
+
+// DEBUT
+//     AFFICHER "Choisis une opération : 1-Addition 2-Soustraction 3-Multiplication 4-Division"
+//     LIRE choix
+
+//     AFFICHER "Entre le premier nombre : "
+//     LIRE nombre1
+
+//     AFFICHER "Entre le deuxième nombre : "
+//     LIRE nombre2
+
+//     SI choix = 1 ALORS
+//         résultat ← nombre1 + nombre2
+//     SINON SI choix = 2 ALORS
+//         résultat ← nombre1 - nombre2
+//     SINON SI choix = 3 ALORS
+//         résultat ← nombre1 * nombre2
+//     SINON SI choix = 4 ALORS
+//         SI nombre2 ≠ 0 ALORS
+//             résultat ← nombre1 / nombre2
+//         SINON
+//             AFFICHER "Erreur : division par zéro"
+//             STOP
+//         FIN SI
+//     SINON
+//         AFFICHER "Choix invalide"
+//         STOP
+//     FIN SI
+
+//     AFFICHER "Résultat : ", résultat
+// FIN
